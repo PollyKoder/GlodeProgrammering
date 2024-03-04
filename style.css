@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    align-items: center;
+    background-color: #fb5607;
+}
+
+.glode {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cookie {
+    font-style: italic;
+}
+
+.contact {
+    font-style: italic;
+}
+
+/* Main */
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headline {
+    font-size: 4em;
+}
+
+.oppstartInfo {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.imgSplash {
+    border: 1px solid black;
+    border-radius: 20px;;
+    width: 280px;
+    height: 180px;
+}
+
+.colorText {
+    color: #386641;
+    font-weight: bolder;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+}
+
+/* .main {
+    letter-spacing: 1px;
+    width: 40rem;
+    position: relative;
+    left: 35rem;
+} */
+
+
+
+/* .info {
+    width: 850px;
+    position: relative;
+    right: 10rem;
+    font-weight: bolder;
+} */
+
+.info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.classroomImg {
+    height: 40rem;
+    width: 50rem;
+    position: relative;
+    right: 10rem;
+
+
+}
+
+.modulA {
+    border-top: black solid 3px;
+    padding-top: 10px;
+    margin-bottom: -8rem;
+}
+
+
+
+.markering {
+    color: black;
+    font-weight: bold;
+}
+
+.imgModulA {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -10rem;
+    top: 8rem;
+}
+
+.imgModulB {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -10rem;
+    top: 8rem;
+    margin-top: -8rem;
+}
+
+.imgModulC {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -10rem;
+    top: 8rem;
+    margin-top: -8rem;
+}
+
+.kunnskapFerdigheter {
+    width: 650px;
+}
+
+
+
+/* Footer */ 
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: #fb5607;
+    margin-top: 30px;
+}
+
+/* Media Queria til telefon */
+
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 426px) {
+
+     .glode {
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    .cookie {
+        font-style: italic;
+    }
+    
+    .kontact {
+        font-style: italic;
+        display: none;
+    }
+
+   .main {
+    position: relative;
+    left: 2rem;
+    width: 17rem;
+   }
+
+   .imgModulA {
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    margin-top: 120px;
+   }
+
+   .imgModulB {
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    margin-top: 20px;
+   }
+
+   .imgModulC {
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    margin-top: 20px;
+   }
+
+   .info {
+    width: 250px;
+    position: relative;
+    left: 1rem;
+   }
+
+   .klasseImg {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 1rem;
+   }
+
+   .kunnskapFerdigheter {
+    width: 250px;
+   }
+   
+}
+
+  /* Media queria til Taplet */
+    
+  @media only screen
+  and (min-device-width : 481px) 
+  and (max-device-width : 768px) {
+    .footer {
+        width: 85rem;
+        font-size: 30px;
+    }
+
+    .info {
+        width: 70rem;
+        position: relative;
+        right: 24rem;
+        font-weight: bolder;
+        font-size: 30px;
+
+       }
+
+       .oppstartInfo {
+        width: 40rem;
+        font-size: 30px;
+       margin-top: 100px;
+       margin-bottom: 120px;
+    }
+
+    .kunnskapFerdigheter {
+        width: 910px;
+        font-size: 30px;
+        position: relative;
+        right: 16rem;
+       }
+
+       .modul {
+        font-size: 30px;
+        width: 50rem;
+       }
+
+       .modulA {
+        font-size: 30px;
+       }
+
+       .header {
+        font-size: 30px;
+        width: 85rem;
+       }
+
+  }
+
+/* Media queria til Laptop */
+  
+@media only screen and (min-device-width : 769px) 
+and (max-device-width : 1024px){
+
+    .footer {
+        width: 85rem;
+        font-size: 30px;
+    }
+
+    .info {
+        width: 70rem;
+        position: relative;
+        right: 24rem;
+        font-weight: bolder;
+        font-size: 30px;
+
+       }
+
+       .oppstartInfo {
+        width: 40rem;
+        font-size: 30px;
+       margin-top: 100px;
+       margin-bottom: 120px;
+    }
+
+    .kunnskapFerdigheter {
+        width: 910px;
+        font-size: 30px;
+        position: relative;
+        right: 16rem;
+       }
+
+       .modul {
+        font-size: 30px;
+        width: 50rem;
+       }
+
+       .modulA {
+        font-size: 30px;
+       }
+
+       .header {
+        font-size: 30px;
+        width: 85rem;
+       }
+
+
+}
+
+
+/* Media queria til støre Laptop */
+
+@media only screen and (min-device-width : 1025px) 
+and (max-device-width : 1200px) {
+
+    .footer {
+        width: 85rem;
+        font-size: 30px;
+    }
+
+    .info {
+        width: 70rem;
+        position: relative;
+        right: 24rem;
+        font-weight: bolder;
+        font-size: 30px;
+
+       }
+
+       .oppstartInfo {
+        width: 40rem;
+        font-size: 30px;
+       margin-top: 100px;
+       margin-bottom: 120px;
+    }
+
+    .kunnskapFerdigheter {
+        width: 910px;
+        font-size: 30px;
+        position: relative;
+        right: 16rem;
+       }
+
+       .modul {
+        font-size: 30px;
+        width: 50rem;
+       }
+
+       .modulA {
+        font-size: 30px;
+       }
+
+       .header {
+        font-size: 30px;
+        width: 100rem;
+       }
+
+
+}
+
+@media only screen and (min-device-width : 1201px) 
+and (max-device-width : 1440px) {
+
+}

@@ -43,7 +43,7 @@ body {
     margin-bottom: 70px;
 }
 
-.oppstartInfo {
+.startInfo {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,14 +117,15 @@ body {
 .moduler {
     flex-direction: column;
     border-top: black solid 3px;
-    padding-top: 10px;
+    padding-top: 50px;
     gap: 15px;
     /* margin-bottom: -8rem; */
 }
 
-.markering {
+.bold {
     color: black;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .classStructure {
@@ -196,13 +197,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
-    margin-bottom: 70px;
-    font-size: x-large;
+    margin-bottom: 120px;
+    font-size: larger;
 }
 
 .preKlist {
     list-style: square;
     padding: 8px;
+}
+
+.link {
+    color: black;
 }
 
 /* Footer */ 
@@ -215,97 +220,74 @@ body {
     gap: 5rem;
     background-color: #fb5607;
     margin-top: 30px;
+    color: black;
 }
 
 /* Media Queria til telefon, kodet av Amalie */
 
 @media only screen
 and (min-device-width : 320px) 
-and (max-device-width : 426px) { 
+and (max-device-width : 426px) {
 
-  .glode {
-    font-size: 25px;
-  }
+ .glode {
+  font-size: 15px;
+ }
 
-  .contact {
-    font-size: 25px;
-  }
+ .position {
+  font-size: 25px;
+ }
 
-  .media {
-    width: 52rem;
-  }
+ .startInfo {
+  flex-direction: column-reverse;
+ }
 
-  .position {
-    position: relative;
-    left: 16rem;
-    justify-content: center;
-  }
+ .imgSplash .splashDetail {
+   width: 300px;
+   height: 200px;
+ }
 
-  .oppstartInfo {
-    position: relative;
-    left: 16rem;
-    flex-direction: column-reverse;
-    margin-bottom: 15em;
-  }
+ .introText {
+  font-size: 15px;
+  margin-left: 10px;
+ }
 
-  .introText {
-    font-size: 50px;
-    width: 650px;
-  }
+ .classroomImg {
+  width: 325px;
+  position: relative;
+  left: 0,5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+ }
 
-  .imgSplash {
-    height: 150px;
-  }
+ .classStructure {
+  font-size: 25px;
+ }
 
-  .info {
-    position: relative;
-    left: 5rem;
-    font-size: 50px;
-    width: 650px;
-    justify-content: center;
-  }
+ .bold {
+    font-size: large;
+ }
 
-  .class {
-    margin-left: 440px;
-  }
+ .modules {
+  flex-direction: column;
+ }
 
-  .classroomImg {
-    width: 50rem;
-  }
+ .preKnowledge {
+  margin-top: 595px;
+  font-size: 20px;
+ }
 
-  .modules {
-    flex-direction: column;
-    position: relative;
-    left: 6rem;
-  }
+ .link {
+    color: #1a1a8e;
+ }
 
-  .modul {
-    font-size: 25px;
-    width: 600px;
-    margin-left: 10rem;
-  }
+ .footer {
+  flex-direction: column;
+  gap: 1.5em;
+  font-size: larger;
+ }
 
-  .imgModulC {
-   margin-top: 90px;
-  }
-
-  .imgModulB {
-    margin-top: 70px;
-  }
-
-  .preKnowledge {
-    margin-top: 750px;
-    font-size: 34px;
-    width: 35rem;
-  }
-
-.footer {
-    flex-direction: column;
-}
-
-  .emailInfo, .cookie, .glodeAS, a{
-    font-size: 25px;
-  }
 
 }
 
@@ -314,49 +296,25 @@ and (max-device-width : 426px) {
   @media only screen
   and (min-device-width : 481px) 
   and (max-device-width : 768px) {
-   
-   /* .footer {
-        width: 85rem;
-        font-size: 30px;
+    .header {
+        width: 100vw;
+    }
+    .imgSplash .splashDetail {
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 400px;
+        height: 250px;
+        margin-left: 15px;
     }
 
-    .info {
-        width: 70rem;
-        position: relative;
-        right: 24rem;
-        font-weight: bolder;
-        font-size: 30px;
-
-       }
-
-       .oppstartInfo {
-        width: 40rem;
-        font-size: 30px;
-       margin-top: 100px;
-       margin-bottom: 120px;
+    .classroomImg {
+        width: 100vw;
+        border-radius: 30px;
     }
 
-    .kunnskapFerdigheter {
-        width: 910px;
-        font-size: 30px;
-        position: relative;
-        right: 16rem;
-       }
-
-       .modul {
-        font-size: 30px;
-        width: 50rem;
-       }
-
-       .modulA {
-        font-size: 30px;
-       }
-
-       .header {
-        font-size: 30px;
-        width: 85rem;
-       }
-*/
+    .link {
+        color: #1a136f;
+    }
   }
 
 /* Media queria til Laptop */
@@ -465,228 +423,3 @@ and (max-device-width : 1200px) {
 and (max-device-width : 1440px) {
 
 }
-
-
-
-
-
-
-
-/*The old Css code*/
-
-     /* .glode {
-        font-style: italic;
-        font-size: 20px;
-        font-weight: bold;
-        position: relative;
-    }
-    
-    .cookie {
-        font-style: italic;
-    }
-    
-    .contact {
-        font-style: italic;
-        display: none;
-    }
-
-   .main {
-    position: relative;
-    left: 2rem;
-    width: 17rem;
-   }
-
-   .imgModulA {
-    position: relative;
-    left: 3rem;
-    top: 1rem;
-    margin-top: 120px;
-   }
-
-   .imgModulB {
-    position: relative;
-    left: 3rem;
-    top: 1rem;
-    margin-top: 20px;
-   }
-
-   .imgModulC {
-    position: relative;
-    left: 3rem;
-    top: 1rem;
-    margin-top: 20px;
-   }
-
-   .info {
-    width: 250px;
-    position: relative;
-    left: 1rem;
-   }
-
-   .klasseImg {
-    height: 250px;
-    width: 250px;
-    position: relative;
-    left: 1rem;
-   }
-
-   .kunnskapFerdigheter {
-    width: 250px;
-   }
-   
-} */
-
-  /* MQ - Tablet */
-    
-  /* @media only screen
-  and (min-device-width : 481px) 
-  and (max-device-width : 768px) {
-    .footer {
-        width: 85rem;
-        font-size: 30px;
-    }
-
-    .info {
-        width: 70rem;
-        position: relative;
-        right: 24rem;
-        font-weight: bolder;
-        font-size: 30px;
-
-       }
-
-       .oppstartInfo {
-        width: 40rem;
-        font-size: 30px;
-       margin-top: 100px;
-       margin-bottom: 120px;
-    }
-
-    .kunnskapFerdigheter {
-        width: 910px;
-        font-size: 30px;
-        position: relative;
-        right: 16rem;
-       }
-
-       .modul {
-        font-size: 30px;
-        width: 50rem;
-       }
-
-       .modulA {
-        font-size: 30px;
-       }
-
-       .header {
-        font-size: 30px;
-        width: 85rem;
-       }
-
-  } */
-
-/* Media queria til Laptop */
-  
-/* @media only screen and (min-device-width : 769px) 
-and (max-device-width : 1024px){
-
-    .footer {
-        width: 85rem;
-        font-size: 30px;
-    }
-
-    .info {
-        width: 70rem;
-        position: relative;
-        right: 24rem;
-        font-weight: bolder;
-        font-size: 30px;
-
-       }
-
-       .oppstartInfo {
-        width: 40rem;
-        font-size: 30px;
-       margin-top: 100px;
-       margin-bottom: 120px;
-    }
-
-    .kunnskapFerdigheter {
-        width: 910px;
-        font-size: 30px;
-        position: relative;
-        right: 16rem;
-       }
-
-       .modul {
-        font-size: 30px;
-        width: 50rem;
-       }
-
-       .modulA {
-        font-size: 30px;
-       }
-
-       .header {
-        font-size: 30px;
-        width: 85rem;
-       }
-
-
-}
- */
-
-/* Media queria til støre Laptop */
-
-/* @media only screen and (min-device-width : 1025px) 
-and (max-device-width : 1200px) {
-
-    .footer {
-        width: 85rem;
-        font-size: 30px;
-    }
-
-    .info {
-        width: 70rem;
-        position: relative;
-        right: 24rem;
-        font-weight: bolder;
-        font-size: 30px;
-
-       }
-
-       .oppstartInfo {
-        width: 40rem;
-        font-size: 30px;
-       margin-top: 100px;
-       margin-bottom: 120px;
-    }
-
-    .kunnskapFerdigheter {
-        width: 910px;
-        font-size: 30px;
-        position: relative;
-        right: 16rem;
-       }
-
-       .modul {
-        font-size: 30px;
-        width: 50rem;
-       }
-
-       .modulA {
-        font-size: 30px;
-       }
-
-       .header {
-        font-size: 30px;
-        width: 100rem;
-       }
-
-
-}
-
-@media only screen and (min-device-width : 1201px) 
-and (max-device-width : 1440px) {
-
-} */

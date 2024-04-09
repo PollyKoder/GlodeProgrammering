@@ -12,12 +12,14 @@
         <form class="cTextInputs">
             <input class="fName shape" type="text" placeholder="Fornavn"/>
             <input class="lName shape" type="text" placeholder="Etternavn"/>
+            <input class="pNumber" type="text" placeholder="Telefon"/>
             <input class="email shape" type="text" placeholder="Email"/>
-            
+            <div>
+                <input class="cBox shape" type="text" maxlength="180" placeholder="Litt info om deg og eventuelle spørsmål"/>
+            </div>
         </form>
-        <div>
-            <input class="cBox shape" type="text" maxlength="180" placeholder="Litt info om deg og eventuelle spørsmål"/>
-        </div>
+        <!-- Trenger js til å samle/lagre informasjon og sende infoen til riktig email -->
+        
         <button class="submitBtn">Send</button>
     </main>
 </body>

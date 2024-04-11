@@ -40,6 +40,35 @@ body {
   gap: 60%;
 }
 
+.colorText {
+  color: green;
+}
+
+.fa-angle-down {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-angle-up {
+  color: black;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+
+.flexBox {
+      flex-basis: 50%; 
+          border: solid 1px #ebebeb;
+          padding: 20px;
+          box-sizing: border-box;
+          width: 50%;
+          margin-left: 300px;
+}
+
 /* Cookie Controler */
 
 .cookie-container {

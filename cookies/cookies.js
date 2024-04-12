@@ -1,28 +1,41 @@
-const angleUpAndDown = document.querySelector(".fa-angle-down");
+const angleUpAndDownElements = document.querySelectorAll(".fa-angle-down");
+const hiddenElements = document.querySelectorAll(".hidden");
 
 
-function angleDown() {
-    angleUpAndDown.classList.add('fa-angle-up');
-    angleUpAndDown.classList.remove('fa-angle-down');
+
+function expandSection() {
+    angleUpAndDownElements.forEach(element => {
+        element.classList.add('fa-angle-up');
+        element.classList.remove('fa-angle-down');
+    });
+
+    hiddenElements.forEach(element => {
+        element.classList.add('open');
+        element.classList.remove('hidden');
+    });
 }
 
-function angleUp() {
-    angleUpAndDown.classList.remove('fa-angle-up');
-    angleUpAndDown.classList.add('fa-angle-down');
+function collapseSection() {
+    angleUpAndDownElements.forEach(element => {
+        element.classList.remove('fa-angle-up');
+        element.classList.add('fa-angle-down');
+    });
 
- 
-    
-
+    hiddenElements.forEach(element => {
+        element.classList.remove('open');
+        element.classList.add('hidden');
+    });
 }
 
 let changes = true;
 
 function change() {
     if (changes) {
-        angleDown();
+        expandSection();
     } else {
-        angleUp();
+        collapseSection();
     }
 
     changes = !changes;
 }
+

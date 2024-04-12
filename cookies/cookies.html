@@ -70,35 +70,59 @@
         </div>
         <div class="notat">
             <p class="element"><strong>Elementor</strong></p>
-            <p >Statistikk (anonymt)   <i onclick="change()" class="fa fa-angle-down" style="font-size:24px"></i> 
+            <p >Statistikk (anonymt) <i id="fa-angle-down" class="fa fa-angle-down" style="font-size:24px"></i>  
             </p>
             
         </div>
-        <section class="flex">
-          <div class="flexBox">
-          <p >Bruk</p>
-    
-          <p>Deling av data</p>
-          
-           <p>Vi bruker Elementor for content creation. Les mer</p> 
-            
-            <p >
-            
-            Disse data er ikke delt med tredjeparts-aktører.</p>
-          
-          <div class="flexBox">
-            <p>
-            Statistikk (anonymt)
-            Navn
-            elementor
-            Utløp
-            vedvarende
-            Funksjon
-            Lagre utførte handlinger på nettsiden</p>
-          
+        <div class="flex">
+          <div class="flexBox hidden2">Bruk
+            <p >Vi bruker Elementor for content creation. Les mer</p>
+          </div>
+          <div class="flexBox hidden2">Deling av data
+            <p>Disse data er ikke delt med tredjeparts-aktører.</p>
+          </div>
         </div>
-        </div>
-      </section>
+        <div class="notat">
+          <p class="element"><strong>Jetpopup</strong></p>
+          <p >Funksjonell  
+          </p>
+      </div>
+      <div class="notat">
+        <p class="element"><strong>Hotjar</strong></p>
+        <p >Statistikk, Funksjonell  
+        </p>
+    </div>
+    <div class="notat">
+      <p class="element"><strong>Google Adsense</strong></p>
+      <p >Markedsføring/sporing  
+      </p>
+  </div>
+  <div class="notat">
+    <p class="element"><strong>Facebook</strong></p>
+    <p >Markedsføring/sporing, Funksjonell 
+    </p>
+</div>
+<div class="notat">
+  <p class="element"><strong>WordPress</strong></p>
+  <p >Funksjonell
+  </p>
+</div>
+<div class="notat">
+  <p class="element"><strong>Google Analytics</strong></p>
+  <p >Statistikk, Funksjonell  
+  </p>
+</div>
+<div class="notat">
+  <p class="element"><strong>YouTube</strong></p>
+  <p >markedsføring/sporing, Funksjonell   
+  </p>
+</div>
+<div class="notat">
+  <p class="element"><strong>Diverse</strong></p>
+  <p >Formål venter på kontroll  
+  </p>
+</div>
+
     </section>
       <section class="introduksjons">
         <div>
@@ -111,16 +135,35 @@
             <p class="info">7.1 Administrer samtykkeinnstillingene dine</p>
         </div>
         <div class="notat">
-            <p class="element"><strong>Funksjonell</strong></p>
-            <p class="colorText">Always active  <i onclick="change()" id="fa-angle-down" class="fa fa-angle-down" style="font-size:24px"></i>   
+            <p class="element"><strong>Nødvendig informasjonskapsler</strong></p>
+            <p class="colorText">Alltid aktiv  <i onclick="change()" id="fa-angle-down" class="fa fa-angle-down" style="font-size:24px"></i>   
             </p>
-            
 
         </div>
+        <p class="hidden">Disse informasjonskapslene er nødvendige for at nettstedets grunnleggende funksjoner skal fungere og kan ikke deaktiveres. 
+          Informasjonskapslene muliggjør gjennomføring av aktiviteter og handlinger på nettstedet som du ønsker å gjennomføre, 
+          som for eksempel å sende et kontaktskjema eller velge lokasjon. Informasjonskapslenes funksjoner benyttes også til ivaretakelse av nettstedets design, 
+          sikkerhet og drift i samsvar med gjeldende regler.</p>
         <div class="notat">
-            <p class="element"><strong>Statistikk</strong></p>
-            <input type="checkbox">
+            <p class="element"><strong>Preferanser</strong></p>
+            <input class="checkBox" type="checkbox">
         </div>
+        <p class="hidden">Informasjonskapsler for preferanser gjør det mulig å lagre dine personlige innstillinger for nettsiden. 
+          Dette kan være innstillinger som for eksempel ditt foretrukne språk, lokasjon eller den regionen du befinner deg i.</p>
+        <div class="notat">
+          <p class="checkBox" class="element"><strong>Statistikk og analyse</strong></p>
+          <input class="checkBox"  type="checkbox">
+      </div>
+      <p class="hidden">Disse informasjonskapslene samler inn informasjon om hvordan våre gjester bruker nettsiden, slik at vi kan måle og forbedre opplevelsen på nettstedet vårt for deg som bruker.
+         Dette kan være hvilke sider man besøker, hvor lang tid man er inne, hvordan man navigerer på nettstedet, søk på kurs ol.</p>
+      <div class="notat">
+        <p class="element"><strong>Markedsføring</strong></p>
+        <input class="checkBox" type="checkbox"> 
+    </div>
+    <p class="hidden">Informasjonskapsler for markedsføring(fra tredjepart) samler informasjon som bidrar til at vi kan tilpasse og levere annonser med høyere relevant innhold, 
+      både innenfor og utenfor dette nettstedet, basert på dine interesser, adferd og aktive handlinger.
+       Disse informasjonskapslene lar oss også kunne lese av resultater av de markedsaktiviteter som gjøres. 
+       I noen tilfeller kan disse informasjonskapslene innebære behandling av dine personopplysninger.</p>
       </section>
       <section class="introduksjons">
         <div>
@@ -168,16 +211,6 @@
         </div>
       </section>
    </main>
-   <div id="accept" class="cookie-container">
-    <div id="contentBox"  class="cookie-box">
-      <div class="cookie-text">
-        <strong>We use cookies</strong> by clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a class="btn-text-link" href="#" target="_blank">Cookie Policy</a>
-      </div>
-      <div class="cookie-action">
-        <button id="btn" class="btn-ctrl btn-outline-white" type="button">Cookie Settings</button>
-        <button id="btn" class="btn-ctrl btn-blue" type="button">Accept All Cookies</button>
-      </div>
-    </div>
-  </div>
+  
 </body>
 </html>
